@@ -1,13 +1,10 @@
-function redirectToNewWebsite() {
-    var currentUrl = window.location.href;
-    var newUrl = ""http://10.46.10.60:3000/";
-
-    if (currentUrl === newUrl) {
-        window.open(newUrl);
-    } else {
-        // Do nothing, as we're already on the desired page
-    }
-}
-
-// Call the function when the page loads
-window.onload = redirectToNewWebsite;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirected Website</title>
+    <meta http-equiv="refresh" content="0;url=http://10.46.10.60:3000/">
+</head>
+<body>
+    <!-- Your website content here -->
+</body>
+</html>
