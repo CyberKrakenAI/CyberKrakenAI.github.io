@@ -1,1 +1,13 @@
-<a href="http://10.46.10.60:3000/">Redirect to new website</a>
+function redirectToNewWebsite() {
+    var currentUrl = window.location.href;
+    var newUrl = ""http://10.46.10.60:3000/";
+
+    if (currentUrl === newUrl) {
+        window.open(newUrl);
+    } else {
+        // Do nothing, as we're already on the desired page
+    }
+}
+
+// Call the function when the page loads
+window.onload = redirectToNewWebsite;
